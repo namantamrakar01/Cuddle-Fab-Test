@@ -24,7 +24,11 @@ const DashboardImageGrid = () => {
       <ImageList
         sx={{
           width: "100%",
+<<<<<<< Updated upstream
           height: 1900,
+=======
+          height: 1500,
+>>>>>>> Stashed changes
           margin: "0 auto",
           overflow: "hidden",
           gap: "1px !important", // Set the gap to 1px
