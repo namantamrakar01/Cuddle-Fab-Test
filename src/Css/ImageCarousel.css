@@ -1,72 +1,104 @@
 #image-carousel {
   width: 100%;
+  max-width: 1440px; /* Set the maximum width */
   margin: 0 auto;
-  overflow: hidden;
-}
-
-.splide {
-  margin-top: 25px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.splide__track {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; /* Ensure the arrows are positioned relative to the carousel */
 }
 
 .splide__slide {
-  padding: 18px;
-  box-sizing: border-box;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to reduce gap */
+}
+
+.carousel-product {
+  width: 340px; /* Set the width */
+  height: 580px; /* Adjust the height to accommodate title and price */
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-product-image-wrapper {
+  width: 100%;
+  height: 510px; /* Keep the image height the same */
+  overflow: hidden; /* Hide overflow to prevent image from increasing size */
+  position: relative; /* Ensure the arrows are positioned relative to the image wrapper */
+}
+
+.carousel-product img {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-product-info {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.carousel-product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.carousel-product-price {
+  font-size: 1rem;
+  color: #555;
+}
+
+.carousel-product:hover .carousel-product-image-wrapper img {
+  transform: scale(1.1); /* Zoom in the image */
 }
 
 .splide__arrow {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  z-index: 10;
-  font-size: 1.4rem;
-  background: none;
-  border: none;
-  color: black;
-  opacity: 0;
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+  opacity: 0; /* Hide arrows by default */
   transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the arrows */
 }
 
 #image-carousel:hover .splide__arrow {
-  opacity: 1;
+  opacity: 1; /* Show arrows on hover */
 }
 
+@media (max-width: 1024px) {
+  .carousel-product {
+    width: 300px; /* Adjust the width as needed */
+    height: 520px; /* Adjust the height as needed */
+  }
 
-
-.splide__slide img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  transition: transform 0.7s ease-in-out;
+  .carousel-product-image-wrapper {
+    height: 450px; /* Keep the image height the same */
+  }
 }
 
-.splide__slide:hover img {
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  .carousel-product {
+    width: 260px; /* Adjust the width as needed */
+    height: 460px; /* Adjust the height as needed */
+  }
+
+  .carousel-product-image-wrapper {
+    height: 390px; /* Keep the image height the same */
+  }
 }
 
-.image-title {
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #333;
-}
+@media (max-width: 480px) {
+  .carousel-product {
+    width: 220px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+  }
 
-.image-price {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  color: #666;
-  margin-top: 2px;
+  .carousel-product-image-wrapper {
+    height: 330px; /* Keep the image height the same */
+  }
 }

@@ -24,13 +24,13 @@ const DashboardImageGrid = () => {
       <ImageList
         sx={{
           width: "100%",
-          height: 1900,
+          height: 1300,
           margin: "0 auto",
           overflow: "hidden",
           gap: "1px !important", // Set the gap to 1px
         }}
         cols={3}
-        rowHeight={810}
+        rowHeight={660}
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
