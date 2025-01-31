@@ -1,0 +1,84 @@
+/* Import Bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Custom Navbar Styles */
+.navbar {
+  min-height: 84px;
+  background-color: white;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand-name {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 750;
+  font-family: "Altone Bold", sans-serif;
+  padding-top: 5px;
+}
+
+.search-icon-icon {
+  width: 1.3rem;
+  height: auto
+}
+
+.cart-icon-icon {
+    width: 1.3rem;
+    height: auto;
+    margin-right: 2.9rem;
+    margin-left : 2.2rem;
+  }
+
+.my-navbar-right {
+  min-width: 150px;
+  margin-right: 2.5rem;
+  position: relative;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: none;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.search-bar.show {
+  display: inline-block;
+  opacity: 1;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 250px; /* Adjust the width as necessary */
+}
+
+.search-bar {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.search-bar.show {
+  display: block;
+  opacity: 1;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
