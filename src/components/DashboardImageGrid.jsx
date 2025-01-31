@@ -24,7 +24,7 @@ const DashboardImageGrid = () => {
       <ImageList
         sx={{
           width: "100%",
-          height: 2000,
+          height: 1900,
           margin: "0 auto",
           overflow: "hidden",
           gap: "1px !important", // Set the gap to 1px
