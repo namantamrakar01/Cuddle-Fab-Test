@@ -2,6 +2,7 @@ import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import '../Css/ImageCarousel.css'; // Separate CSS file
+import CarouselProduct from './CarouselProduct';
 
 // Import images
 import image6 from "../assets/image6.jpg";
@@ -32,6 +33,7 @@ const ImageCarousel = () => {
           pagination: false, // Removes dots
           perPage: 4, // Show 4 slides at a time
           perMove: 1,
+          gap: '10px', // Reduce gap between slides
           breakpoints: {
             1024: {
               perPage: 3,
@@ -47,13 +49,8 @@ const ImageCarousel = () => {
       >
         {itemData.map((item, index) => (
           <SplideSlide key={index}>
-          <div style={{ position: "relative", overflow: "hidden" }}>
-              <img src={item.img} alt={item.title} />
-          </div>
-          <p className="image-title">{item.title}</p>
-          <p className="image-price">{item.price}</p>
-      </SplideSlide>
-      
+            <CarouselProduct imageUrl={item.img} title={item.title} price={item.price} />
+          </SplideSlide>
         ))}
       </Splide>
     </section>
