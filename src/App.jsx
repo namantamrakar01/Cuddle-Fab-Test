@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ProductGrid from './components/ProductGrid';
 import ImageCarousel from './components/ImageCarousel';
+import Login from './components/Login';
 import Box from '@mui/material/Box';
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       </Box>
       <Box pb={500}>
         <ImageCarousel />
+      </Box>
+      <Box pb={500}>
+        <Login />
       </Box>
     </>
   );
