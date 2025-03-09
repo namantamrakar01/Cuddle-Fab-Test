@@ -2,12 +2,22 @@ import React, { useState } from "react";
 import "../Css/navbar.css";
 import Logo from "./Logo";
 import LoginButton from "./LoginButton";
+import Login from "./Login";
 
 function Navbar() {
   const [searchVisible, setSearchVisible] = useState(false);
+  const [loginVisible, setLoginVisible] = useState(false);
 
   const handleSearchClick = () => {
     setSearchVisible((prev) => !prev);
+  };
+
+  const handleLoginClick = () => {
+    setLoginVisible((prev) => !prev);
+  };
+
+  const handleCloseLogin = () => {
+    setLoginVisible(false);
   };
 
   return (
@@ -48,11 +58,12 @@ function Navbar() {
               />
             </div>
             <div>
-              <LoginButton />
+              <LoginButton onClick={handleLoginClick} />
             </div>
           </div>
         </div>
       </nav>
+      <Login visible={loginVisible} onClose={handleCloseLogin} />
     </>
   );
 }
