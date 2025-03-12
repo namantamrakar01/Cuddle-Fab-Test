@@ -19,10 +19,10 @@ const Testign = () => {
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Counter: {count}</h1>
       <button onClick={increment} style={{ margin: '5px', padding: '10px 20px' }}>
-        Increment
+        Decrement
       </button>
       <button onClick={decrement} style={{ margin: '5px', padding: '10px 20px' }}>
-        Decrement
+        Increment
       </button>
     </div>
   );
