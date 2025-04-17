@@ -53,6 +53,15 @@
   transition: opacity 0.3s ease, width 0.3s ease;
 }
 
+.search-bar {
+  display: none;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
 .search-bar.show {
   display: inline-block;
   opacity: 1;

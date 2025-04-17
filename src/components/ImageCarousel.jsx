@@ -19,6 +19,7 @@ const ImageCarousel = () => {
     { img: image3, title: "Kiddo Set", price: "$20" },
     { img: image4, title: "Snuggle Wear", price: "$28" },
     { img: image5, title: "Tiny Tot Dress", price: "$22" },
+    { img: image5, title: "Tiny Tot Dress", price: "$22" },
     { img: image6, title: "Junior Style", price: "$35" },
     { img: image6, title: "Junior Style", price: "$35" },
   ];
