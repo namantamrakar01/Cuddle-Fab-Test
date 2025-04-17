@@ -10,6 +10,7 @@ const CarouselProduct = ({ imageUrl, title, price }) => {
             <div className="carousel-product-info">
                 <div className="carousel-product-title">{title}</div>
                 <div className="carousel-product-price">{price}</div>
+                <div className="carousel-product-price">{price}</div>
             </div>
         </div>
     );
