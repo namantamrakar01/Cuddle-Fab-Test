@@ -5,7 +5,7 @@ function Logo() {
         <div>
             <img 
                 src={cuddleLogo} 
-                alt="logo" 
+                alt="logoDemo" 
                 style={{ width: '33px', height: 'auto' }}
             />
         </div>
