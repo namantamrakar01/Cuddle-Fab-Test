@@ -17,12 +17,12 @@ const Testign = () => {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Counter: {count}</h1>
+      <h1>Countter: {count}</h1>
       <button onClick={increment} style={{ margin: '5px', padding: '10px 20px' }}>
-        Increment Button
+        This button will increase the count.
       </button>
       <button onClick={decrement} style={{ margin: '5px', padding: '10px 20px' }}>
-        Decrement Button
+        This button will decrease the count.
       </button>
     </div>
   );
