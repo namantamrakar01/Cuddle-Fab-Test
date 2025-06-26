@@ -28,7 +28,7 @@ function Navbar() {
             <div className="d-flex justify-content-center">
               <Logo />
             </div>
-            <h1 className="brand-name">Cuddle Fab</h1>
+            <h1 className="brand-name">Cuddle Fab Navbar</h1>
           </div>
 
           <div className="d-flex align-items-center justify-content-between my-navbar-right">
